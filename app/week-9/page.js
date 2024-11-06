@@ -37,7 +37,7 @@ export default function SignInPage() {
           <p>
             Welcome, {user.displayName}! ({user.email})
           </p>
-          <Link href="/week-9/protected">Protect Page</Link>
+          <Link href="/week-9/shopping-list">Shopping List (protected)</Link>
           <button
             type="button"
             className="text-lg bg-blue-600 text-white rounded px-2 py-1 mt-4"
@@ -48,6 +48,7 @@ export default function SignInPage() {
         </div>
       ) : (
         <div>
+          <Link href="/week-9/shopping-list">Shopping List (protected)</Link>
           <button
             type="button"
             className="text-lg bg-blue-600 text-white rounded px-2 py-1 mt-4"
